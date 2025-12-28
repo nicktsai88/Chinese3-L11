@@ -80,7 +80,7 @@
             ChevronRight, LogOut, User, ArrowLeft, Zap, Volume2, Home, LayoutGrid, 
             Layers, ChevronDown, ChevronUp, Loader2, Sparkles, Image as ImageIcon, Download, ImageOff,
             Gavel, Scale, FileText, List, Leaf, Droplets, Tent, Mountain, PlayCircle, FastForward, RotateCcw,
-            Flower, BookMarked, Hammer, Brain, Lightbulb, Info
+            Flower, BookMarked, Hammer, Brain, Lightbulb
         } from 'lucide-react';
 
         // --- LocalStorage Database Helper ---
@@ -256,100 +256,100 @@
             let id = 1;
             
             // --- 1. 字形字音 (40題 - 完整覆蓋) ---
-            q.push({ id: id++, category: "形音義", question: "「鍥」而不捨的讀音是？", options: ["ㄑㄧㄝˋ", "ㄑㄧˋ", "ㄒㄧㄝ", "ㄐㄧㄝ"], answer: "ㄑㄧㄝˋ", explanation: "「鍥」音ㄑㄧㄝˋ，意為鏤刻。注意不可讀為ㄑㄧˋ(契)。" });
-            q.push({ id: id++, category: "形音義", question: "「契」合的讀音是？", options: ["ㄑㄧˋ", "ㄑㄧㄝˋ", "ㄐㄧㄝ", "ㄒㄧㄝ"], answer: "ㄑㄧˋ", explanation: "「契」音ㄑㄧˋ，意為投合。如：默契、契合。" });
-            q.push({ id: id++, category: "形音義", question: "「楔」子的讀音是？", options: ["ㄒㄧㄝ", "ㄑㄧˋ", "ㄑㄧㄝˋ", "ㄔ"], answer: "ㄒㄧㄝ", explanation: "「楔」音ㄒㄧㄝ，楔子指小說前的序文，或填充空隙的木片。" });
-            q.push({ id: id++, category: "形音義", question: "「喫」茶的意思同於？", options: ["吃", "喝", "看", "買"], answer: "吃", explanation: "「喫」音ㄔ，同「吃」，意為飲、食。" });
-            q.push({ id: id++, category: "形音義", question: "「怙」惡不悛的讀音是？", options: ["ㄏㄨˋ", "ㄍㄨ", "ㄎㄨ", "ㄐㄩ"], answer: "ㄏㄨˋ", explanation: "「怙」音ㄏㄨˋ，依靠的意思。怙惡不悛指堅持作惡不肯悔改。" });
-            q.push({ id: id++, category: "形音義", question: "待價而「沽」的意思是？", options: ["賣", "買", "估計", "等待"], answer: "賣", explanation: "「沽」音ㄍㄨ，意思是賣。待價而沽比喻人等待機會，為世所用。" });
-            q.push({ id: id++, category: "形音義", question: "人心不「古」的意思是？", options: ["質樸", "古代", "老舊", "固執"], answer: "質樸", explanation: "古：古樸、質樸。人心不古感嘆今人心地奸詐，不如古人忠厚質樸。" });
-            q.push({ id: id++, category: "形音義", question: "居心「叵」測的意思是？", options: ["不可(險惡)", "可以", "困難", "容易"], answer: "不可(險惡)", explanation: "「叵」音ㄆㄛˇ，意思是「不可」。居心叵測指心存險惡，難以預測。" });
-            q.push({ id: id++, category: "形音義", question: "「削」足適履的「削」讀音？", options: ["ㄒㄩㄝˋ", "ㄒㄧㄠ", "ㄕㄠ", "ㄒㄧㄠˇ"], answer: "ㄒㄩㄝˋ", explanation: "「削」讀ㄒㄩㄝˋ時多用於複合詞，如削足適履、剝削、削弱。" });
-            q.push({ id: id++, category: "形音義", question: "被老師「削」了一頓的讀音是？", options: ["ㄒㄧㄠ", "ㄒㄩㄝˋ", "ㄕㄠ", "ㄙㄨㄛ"], answer: "ㄒㄧㄠ", explanation: "「削」讀ㄒㄧㄠ時多為口語或動作用詞，如削鉛筆、削了一頓(責罵)。" });
-            q.push({ id: id++, category: "形音義", question: "通「宵」達旦的意思是？", options: ["夜晚", "天空", "雲氣", "除去"], answer: "夜晚", explanation: "「宵」音ㄒㄧㄠ，指夜晚。如：元宵、春宵。" });
-            q.push({ id: id++, category: "形音義", question: "九「霄」雲外的意思是？", options: ["天空", "夜晚", "仙境", "遠方"], answer: "天空", explanation: "「霄」音ㄒㄧㄠ，指天空、雲氣。如：雲霄飛車、衝上雲霄。" });
-            q.push({ id: id++, category: "形音義", question: "不屈不「撓」的讀音是？", options: ["ㄋㄠˊ", "ㄖㄠˊ", "ㄐㄧㄠˇ", "ㄒㄧㄠˇ"], answer: "ㄋㄠˊ", explanation: "「撓」音ㄋㄠˊ，意為彎曲、屈服。不屈不撓指不因為受阻礙而屈服。" });
-            q.push({ id: id++, category: "形音義", question: "「僥」倖的讀音是？", options: ["ㄐㄧㄠˇ", "ㄋㄠˊ", "ㄖㄠˊ", "ㄧㄠ"], answer: "ㄐㄧㄠˇ", explanation: "「僥」音ㄐㄧㄠˇ。僥倖指意外獲得成功或免去災禍。" });
-            q.push({ id: id++, category: "形音義", question: "富「饒」的意思是？", options: ["豐厚", "寬恕", "彎曲", "柴草"], answer: "豐厚", explanation: "「饒」音ㄖㄠˊ，意為豐厚、富足。如：富饒、豐饒。" });
-            q.push({ id: id++, category: "形音義", question: "妖「嬈」的讀音是？", options: ["ㄖㄠˊ", "ㄋㄠˊ", "ㄐㄧㄠˇ", "ㄒㄧㄠ"], answer: "ㄖㄠˊ", explanation: "「嬈」音ㄖㄠˊ，意為嬌媚、嫵媚。如：妖嬈。" });
-            q.push({ id: id++, category: "形音義", question: "「恪」守規定的讀音是？", options: ["ㄎㄜˋ", "ㄍㄜˋ", "ㄌㄨㄛˋ", "ㄑㄩㄝˋ"], answer: "ㄎㄜˋ", explanation: "「恪」音ㄎㄜˋ，意為謹慎誠敬。如：恪守、恪遵。" });
-            q.push({ id: id++, category: "形音義", question: "「絡」繹不絕的讀音是？", options: ["ㄌㄨㄛˋ", "ㄍㄜˋ", "ㄎㄜˋ", "ㄌㄠˋ"], answer: "ㄌㄨㄛˋ", explanation: "「絡」音ㄌㄨㄛˋ。絡繹不絕形容連續不斷。" });
-            q.push({ id: id++, category: "形音義", question: "「驛」站的讀音是？", options: ["ㄧˋ", "ㄗㄜˊ", "ㄕˋ", "ㄔㄜ"], answer: "ㄧˋ", explanation: "「驛」音ㄧˋ，古代供傳遞公文或休息換馬的地方。" });
-            q.push({ id: id++, category: "形音義", question: "力有未「逮」的意思是？", options: ["及、趕上", "捉拿", "等待", "思考"], answer: "及、趕上", explanation: "「逮」音ㄉㄞˋ，意為及、趕上。力有未逮指能力有所不及。" });
-            q.push({ id: id++, category: "形音義", question: "「估」計的讀音是？", options: ["ㄍㄨ", "ㄍㄨˇ", "ㄏㄨˋ", "ㄐㄩ"], answer: "ㄍㄨ", explanation: "「估」音ㄍㄨ，意為評定、推算。如：評估、估價。" });
-            q.push({ id: id++, category: "形音義", question: "「辜」負的意思是？", options: ["背負、虧欠", "犯罪", "死亡", "孤單"], answer: "背負、虧欠", explanation: "「辜」音ㄍㄨ，意為背負、違背。如：辜負、無辜。" });
-            q.push({ id: id++, category: "形音義", question: "「楔」子的意思是指？", options: ["小說前的序文", "木工工具", "契約", "鞋子"], answer: "小說前的序文", explanation: "「楔」音ㄒㄧㄝ。楔子本指填充縫隙的小木片，引申為小說戲曲的序文。" });
-            q.push({ id: id++, category: "形音義", question: "撤「銷」是指？", options: ["除去", "銷售", "熔化", "夜晚"], answer: "除去", explanation: "「銷」音ㄒㄧㄠ，意為除去、解除。如：撤銷、註銷。" });
-            q.push({ id: id++, category: "形音義", question: "「逍」遙的意思是？", options: ["自由自在", "快速", "消失", "走路"], answer: "自由自在", explanation: "「逍」音ㄒㄧㄠ。逍遙指自由自在，不受拘束。" });
-            q.push({ id: id++, category: "形音義", question: "抓耳「撓」腮的意思是？", options: ["抓、搔", "彎曲", "阻礙", "攪擾"], answer: "抓、搔", explanation: "「撓」音ㄋㄠˊ，此處意為抓、搔癢。形容焦急或不知所措的樣子。" });
-            q.push({ id: id++, category: "形音義", question: "薪「蕘」的意思是？", options: ["燃燒用的柴草", "富足", "妖媚", "彎曲"], answer: "燃燒用的柴草", explanation: "「蕘」音ㄖㄠˊ，指燃燒用的柴草。" });
-            q.push({ id: id++, category: "形音義", question: "畫舸停「橈」的意思是？", options: ["船槳", "彎曲", "阻礙", "木頭"], answer: "船槳", explanation: "「橈」音ㄋㄠˊ，指船槳。" });
-            q.push({ id: id++, category: "形音義", question: "家喻戶「曉」的意思是？", options: ["知道、明白", "天亮", "早晨", "告知"], answer: "知道、明白", explanation: "「曉」音ㄒㄧㄠˇ，意為知道。家喻戶曉指家家戶戶都知道。" });
-            q.push({ id: id++, category: "形音義", question: "乳「酪」的讀音是？", options: ["ㄌㄨㄛˋ", "ㄌㄠˋ", "ㄍㄜˋ", "ㄎㄜˋ"], answer: "ㄌㄨㄛˋ", explanation: "「酪」音ㄌㄨㄛˋ。如：乳酪、奶酪。" });
-            q.push({ id: id++, category: "形音義", question: "「烙」印的讀音是？", options: ["ㄌㄠˋ", "ㄌㄨㄛˋ", "ㄌㄨˋ", "ㄍㄜˋ"], answer: "ㄌㄠˋ", explanation: "「烙」音ㄌㄠˋ。用高溫燒燙。" });
-            q.push({ id: id++, category: "形音義", question: "賄「賂」的讀音是？", options: ["ㄌㄨˋ", "ㄌㄨㄛˋ", "ㄍㄜˋ", "ㄅㄟˋ"], answer: "ㄌㄨˋ", explanation: "「賂」音ㄌㄨˋ。賄賂指行賄。" });
-            q.push({ id: id++, category: "形音義", question: "尋「繹」的意思是？", options: ["理出頭緒，推究事理", "連續不斷", "翻譯", "選擇"], answer: "理出頭緒，推究事理", explanation: "「繹」音ㄧˋ，尋繹意為推究事理，理出頭緒。" });
-            q.push({ id: id++, category: "形音義", question: "恩「澤」的意思是？", options: ["恩惠", "水流匯聚處", "光彩", "選擇"], answer: "恩惠", explanation: "「澤」音ㄗㄜˊ，本義為水流匯聚處，引申為恩惠。" });
-            q.push({ id: id++, category: "形音義", question: "「朝」聖的讀音是？", options: ["ㄔㄠˊ", "ㄓㄠ", "ㄔㄠ", "ㄓㄠˊ"], answer: "ㄔㄠˊ", explanation: "「朝」讀ㄔㄠˊ時，指朝見、向著。如：朝聖、朝廷。" });
-            q.push({ id: id++, category: "形音義", question: "有「朝」一日的讀音是？", options: ["ㄓㄠ", "ㄔㄠˊ", "ㄔㄠ", "ㄓㄠˊ"], answer: "ㄓㄠ", explanation: "「朝」讀ㄓㄠ時，指早晨、日子。如：朝氣、今朝。" });
-            q.push({ id: id++, category: "形音義", question: "「綻」放的讀音是？", options: ["ㄓㄢˋ", "ㄉㄧㄥˋ", "ㄔㄣˊ", "ㄒㄧㄢˋ"], answer: "ㄓㄢˋ", explanation: "「綻」音ㄓㄢˋ，指花蕾吐放或裂開。如：皮開肉綻。" });
-            q.push({ id: id++, category: "形音義", question: "「秉」燭夜遊的讀音是？", options: ["ㄅㄧㄥˇ", "ㄅㄧㄥ", "ㄆㄧㄥˊ", "ㄐㄧㄢ"], answer: "ㄅㄧㄥˇ", explanation: "「秉」音ㄅㄧㄥˇ，意為拿著、握著。" });
-            q.push({ id: id++, category: "形音義", question: "「咎」由自取的讀音是？", options: ["ㄐㄧㄡˋ", "ㄐㄧㄡ", "ㄍㄜˋ", "ㄔㄨˋ"], answer: "ㄐㄧㄡˋ", explanation: "「咎」音ㄐㄧㄡˋ，意為災禍、罪過。" });
-            q.push({ id: id++, category: "形音義", question: "周「遭」的意思是？", options: ["周圍", "遇見", "遭受", "次數"], answer: "周圍", explanation: "「遭」音ㄗㄠ。周遭意指周圍。" });
+            q.push({ id: id++, category: "形音義", question: "「鍥」而不捨的讀音是？", options: ["ㄑㄧㄝˋ", "ㄑㄧˋ", "ㄒㄧㄝ", "ㄐㄧㄝ"], answer: "ㄑㄧㄝˋ" });
+            q.push({ id: id++, category: "形音義", question: "「契」合的讀音是？", options: ["ㄑㄧˋ", "ㄑㄧㄝˋ", "ㄐㄧㄝ", "ㄒㄧㄝ"], answer: "ㄑㄧˋ" });
+            q.push({ id: id++, category: "形音義", question: "「楔」子的讀音是？", options: ["ㄒㄧㄝ", "ㄑㄧˋ", "ㄑㄧㄝˋ", "ㄔ"], answer: "ㄒㄧㄝ" });
+            q.push({ id: id++, category: "形音義", question: "「喫」茶的意思同於？", options: ["吃", "喝", "看", "買"], answer: "吃" });
+            q.push({ id: id++, category: "形音義", question: "「怙」惡不悛的讀音是？", options: ["ㄏㄨˋ", "ㄍㄨ", "ㄎㄨ", "ㄐㄩ"], answer: "ㄏㄨˋ" });
+            q.push({ id: id++, category: "形音義", question: "待價而「沽」的意思是？", options: ["賣", "買", "估計", "等待"], answer: "賣" });
+            q.push({ id: id++, category: "形音義", question: "人心不「古」的意思是？", options: ["質樸", "古代", "老舊", "固執"], answer: "質樸" });
+            q.push({ id: id++, category: "形音義", question: "居心「叵」測的意思是？", options: ["不可(險惡)", "可以", "困難", "容易"], answer: "不可(險惡)" });
+            q.push({ id: id++, category: "形音義", question: "「削」足適履的「削」讀音？", options: ["ㄒㄩㄝˋ", "ㄒㄧㄠ", "ㄕㄠ", "ㄒㄧㄠˇ"], answer: "ㄒㄩㄝˋ" });
+            q.push({ id: id++, category: "形音義", question: "被老師「削」了一頓的讀音是？", options: ["ㄒㄧㄠ", "ㄒㄩㄝˋ", "ㄕㄠ", "ㄙㄨㄛ"], answer: "ㄒㄧㄠ" });
+            q.push({ id: id++, category: "形音義", question: "通「宵」達旦的意思是？", options: ["夜晚", "天空", "雲氣", "除去"], answer: "夜晚" });
+            q.push({ id: id++, category: "形音義", question: "九「霄」雲外的意思是？", options: ["天空", "夜晚", "仙境", "遠方"], answer: "天空" });
+            q.push({ id: id++, category: "形音義", question: "不屈不「撓」的讀音是？", options: ["ㄋㄠˊ", "ㄖㄠˊ", "ㄐㄧㄠˇ", "ㄒㄧㄠˇ"], answer: "ㄋㄠˊ" });
+            q.push({ id: id++, category: "形音義", question: "「僥」倖的讀音是？", options: ["ㄐㄧㄠˇ", "ㄋㄠˊ", "ㄖㄠˊ", "ㄧㄠ"], answer: "ㄐㄧㄠˇ" });
+            q.push({ id: id++, category: "形音義", question: "富「饒」的意思是？", options: ["豐厚", "寬恕", "彎曲", "柴草"], answer: "豐厚" });
+            q.push({ id: id++, category: "形音義", question: "妖「嬈」的讀音是？", options: ["ㄖㄠˊ", "ㄋㄠˊ", "ㄐㄧㄠˇ", "ㄒㄧㄠ"], answer: "ㄖㄠˊ" });
+            q.push({ id: id++, category: "形音義", question: "「恪」守規定的讀音是？", options: ["ㄎㄜˋ", "ㄍㄜˋ", "ㄌㄨㄛˋ", "ㄑㄩㄝˋ"], answer: "ㄎㄜˋ" });
+            q.push({ id: id++, category: "形音義", question: "「絡」繹不絕的讀音是？", options: ["ㄌㄨㄛˋ", "ㄍㄜˋ", "ㄎㄜˋ", "ㄌㄠˋ"], answer: "ㄌㄨㄛˋ" });
+            q.push({ id: id++, category: "形音義", question: "「驛」站的讀音是？", options: ["ㄧˋ", "ㄗㄜˊ", "ㄕˋ", "ㄔㄜ"], answer: "ㄧˋ" });
+            q.push({ id: id++, category: "形音義", question: "力有未「逮」的意思是？", options: ["及、趕上", "捉拿", "等待", "思考"], answer: "及、趕上" });
+            q.push({ id: id++, category: "形音義", question: "「估」計的讀音是？", options: ["ㄍㄨ", "ㄍㄨˇ", "ㄏㄨˋ", "ㄐㄩ"], answer: "ㄍㄨ" });
+            q.push({ id: id++, category: "形音義", question: "「辜」負的意思是？", options: ["背負、虧欠", "犯罪", "死亡", "孤單"], answer: "背負、虧欠" });
+            q.push({ id: id++, category: "形音義", question: "「楔」子的意思是指？", options: ["小說前的序文", "木工工具", "契約", "鞋子"], answer: "小說前的序文" });
+            q.push({ id: id++, category: "形音義", question: "撤「銷」是指？", options: ["除去", "銷售", "熔化", "夜晚"], answer: "除去" });
+            q.push({ id: id++, category: "形音義", question: "「逍」遙的意思是？", options: ["自由自在", "快速", "消失", "走路"], answer: "自由自在" });
+            q.push({ id: id++, category: "形音義", question: "抓耳「撓」腮的意思是？", options: ["抓、搔", "彎曲", "阻礙", "攪擾"], answer: "抓、搔" });
+            q.push({ id: id++, category: "形音義", question: "薪「蕘」的意思是？", options: ["燃燒用的柴草", "富足", "妖媚", "彎曲"], answer: "燃燒用的柴草" });
+            q.push({ id: id++, category: "形音義", question: "畫舸停「橈」的意思是？", options: ["船槳", "彎曲", "阻礙", "木頭"], answer: "船槳" });
+            q.push({ id: id++, category: "形音義", question: "家喻戶「曉」的意思是？", options: ["知道、明白", "天亮", "早晨", "告知"], answer: "知道、明白" });
+            q.push({ id: id++, category: "形音義", question: "乳「酪」的讀音是？", options: ["ㄌㄨㄛˋ", "ㄌㄠˋ", "ㄍㄜˋ", "ㄎㄜˋ"], answer: "ㄌㄨㄛˋ" });
+            q.push({ id: id++, category: "形音義", question: "「烙」印的讀音是？", options: ["ㄌㄠˋ", "ㄌㄨㄛˋ", "ㄌㄨˋ", "ㄍㄜˋ"], answer: "ㄌㄠˋ" });
+            q.push({ id: id++, category: "形音義", question: "賄「賂」的讀音是？", options: ["ㄌㄨˋ", "ㄌㄨㄛˋ", "ㄍㄜˋ", "ㄅㄟˋ"], answer: "ㄌㄨˋ" });
+            q.push({ id: id++, category: "形音義", question: "尋「繹」的意思是？", options: ["理出頭緒，推究事理", "連續不斷", "翻譯", "選擇"], answer: "理出頭緒，推究事理" });
+            q.push({ id: id++, category: "形音義", question: "恩「澤」的意思是？", options: ["恩惠", "水流匯聚處", "光彩", "選擇"], answer: "恩惠" });
+            q.push({ id: id++, category: "形音義", question: "「朝」聖的讀音是？", options: ["ㄔㄠˊ", "ㄓㄠ", "ㄔㄠ", "ㄓㄠˊ"], answer: "ㄔㄠˊ" });
+            q.push({ id: id++, category: "形音義", question: "有「朝」一日的讀音是？", options: ["ㄓㄠ", "ㄔㄠˊ", "ㄔㄠ", "ㄓㄠˊ"], answer: "ㄓㄠ" });
+            q.push({ id: id++, category: "形音義", question: "「綻」放的讀音是？", options: ["ㄓㄢˋ", "ㄉㄧㄥˋ", "ㄔㄣˊ", "ㄒㄧㄢˋ"], answer: "ㄓㄢˋ" });
+            q.push({ id: id++, category: "形音義", question: "「秉」燭夜遊的讀音是？", options: ["ㄅㄧㄥˇ", "ㄅㄧㄥ", "ㄆㄧㄥˊ", "ㄐㄧㄢ"], answer: "ㄅㄧㄥˇ" });
+            q.push({ id: id++, category: "形音義", question: "「咎」由自取的讀音是？", options: ["ㄐㄧㄡˋ", "ㄐㄧㄡ", "ㄍㄜˋ", "ㄔㄨˋ"], answer: "ㄐㄧㄡˋ" });
+            q.push({ id: id++, category: "形音義", question: "周「遭」的意思是？", options: ["周圍", "遇見", "遭受", "次數"], answer: "周圍" });
 
             // --- 2. 成語與詞語 (20題 - 增加反義與釋義) ---
-            q.push({ id: id++, category: "成語", question: "「名聞遐邇」的近義詞是？", options: ["遠近馳名", "默默無聞", "惡名昭彰", "不見經傳"], answer: "遠近馳名", explanation: "名聞遐邇形容名聲傳播得很遠。近義詞為遠近馳名。" });
-            q.push({ id: id++, category: "成語", question: "「鍥而不捨」比喻？", options: ["堅持到底", "刻印章", "捨棄不顧", "做事果斷"], answer: "堅持到底", explanation: "鍥：鏤刻；捨：停止。不斷鏤刻而不停止，比喻堅持到底，奮勉不懈。" });
-            q.push({ id: id++, category: "成語", question: "「屢戰屢敗」的反義詞是？", options: ["戰無不勝", "一敗塗地", "棄甲曳兵", "潰不成軍"], answer: "戰無不勝", explanation: "屢戰屢敗指每次打仗都失敗。反義詞為戰無不勝（攻無不克）。" });
-            q.push({ id: id++, category: "成語", question: "「嶄露頭角」形容？", options: ["顯示特出的才華", "頭上長角", "隱藏實力", "剛起床的樣子"], answer: "顯示特出的才華", explanation: "嶄露頭角比喻顯示特出的才華或本領。" });
-            q.push({ id: id++, category: "成語", question: "「韜光養晦」是哪句成語的反義詞？", options: ["嶄露頭角", "虛懷若谷", "大智若愚", "深藏不露"], answer: "嶄露頭角", explanation: "韜光養晦比喻隱藏才智，不使外露。是「嶄露頭角」的反義詞。" });
-            q.push({ id: id++, category: "成語", question: "「絡繹不絕」形容？", options: ["連續不斷", "交通阻塞", "聲音很大", "繩子很長"], answer: "連續不斷", explanation: "絡繹不絕形容行人車馬來往頻繁，連續不斷。" });
-            q.push({ id: id++, category: "成語", question: "「一望無際」形容？", options: ["寬廣遼闊", "視力模糊", "沒有希望", "邊界很近"], answer: "寬廣遼闊", explanation: "一望無際指一眼望去看不著邊際，形容寬廣、遼闊。" });
-            q.push({ id: id++, category: "成語", question: "「懵懂」的意思接近？", options: ["糊塗", "明白", "聰明", "懂事"], answer: "糊塗", explanation: "懵懂形容心裡不明白、糊塗。" });
-            q.push({ id: id++, category: "成語", question: "「怙惡不悛」是指？", options: ["堅持作惡不悔改", "父親去世", "惡人有惡報", "雖然作惡但會改"], answer: "堅持作惡不悔改", explanation: "怙：依靠；悛：悔改。依靠某種勢力，堅持作惡，不肯悔改。" });
-            q.push({ id: id++, category: "成語", question: "「居心叵測」的意思是？", options: ["存心險惡，難以推測", "心地善良", "心思細膩", "居住環境不好"], answer: "存心險惡，難以推測", explanation: "叵：不可。居心叵測指心存險惡，難以推測。" });
-            q.push({ id: id++, category: "成語", question: "「微乎其微」形容？", options: ["非常微小", "非常重要", "微妙的關係", "危險"], answer: "非常微小", explanation: "微乎其微形容非常微小，不重要。" });
-            q.push({ id: id++, category: "成語", question: "「待價而沽」原本是指賣什麼？", options: ["貨物(比喻懷才待用)", "土地", "股票", "古董"], answer: "貨物(比喻懷才待用)", explanation: "沽：賣。原指等待好價錢才賣出。後比喻人等待機會，為世所用。" });
-            q.push({ id: id++, category: "成語", question: "「九霄雲外」通常用來形容？", options: ["拋在極遠的地方", "飛機飛很高", "天氣很好", "神仙住的地方"], answer: "拋在極遠的地方", explanation: "九霄雲外形容極高的天空。常形容將事物拋在極遠的地方，完全不放在心上。" });
-            q.push({ id: id++, category: "成語", question: "「家道中落」的意思是？", options: ["家境衰敗", "搬家", "家中有人跌倒", "蓋房子"], answer: "家境衰敗", explanation: "家道中落指家境由富轉貧，走向衰敗。" });
-            q.push({ id: id++, category: "成語", question: "「央求」的意思是？", options: ["懇求", "要求", "命令", "答應"], answer: "懇求", explanation: "央求即懇求、請求。" });
-            q.push({ id: id++, category: "成語", question: "「微乎其微」的反義詞是？", options: ["舉足輕重", "微不足道", "滄海一粟", "九牛一毛"], answer: "舉足輕重", explanation: "微乎其微指極小；舉足輕重指非常重要，足以影響全局。" });
-            q.push({ id: id++, category: "成語", question: "「名聞遐邇」的反義詞是？", options: ["默默無聞", "聲名大噪", "家喻戶曉", "遠近馳名"], answer: "默默無聞", explanation: "名聞遐邇指名氣大；默默無聞指沒有名氣。" });
-            q.push({ id: id++, category: "成語", question: "「聲名大噪」的意思是？", options: ["聲望名氣大為提高", "聲音很大", "吵鬧不休", "名聲掃地"], answer: "聲望名氣大為提高", explanation: "聲名大噪指聲望名氣大為提高。" });
-            q.push({ id: id++, category: "成語", question: "「不屈不撓」的意思接近？", options: ["百折不撓", "卑躬屈膝", "委曲求全", "撓癢癢"], answer: "百折不撓", explanation: "不屈不撓指不因為受阻礙而屈服。近義詞為百折不撓。" });
-            q.push({ id: id++, category: "成語", question: "「筋疲力竭」的意思是？", options: ["形容非常疲倦", "力大無窮", "精神抖擻", "筋骨受傷"], answer: "形容非常疲倦", explanation: "筋疲力竭形容非常疲倦，力氣用盡。" });
+            q.push({ id: id++, category: "成語", question: "「名聞遐邇」的近義詞是？", options: ["遠近馳名", "默默無聞", "惡名昭彰", "不見經傳"], answer: "遠近馳名" });
+            q.push({ id: id++, category: "成語", question: "「鍥而不捨」比喻？", options: ["堅持到底", "刻印章", "捨棄不顧", "做事果斷"], answer: "堅持到底" });
+            q.push({ id: id++, category: "成語", question: "「屢戰屢敗」的反義詞是？", options: ["戰無不勝", "一敗塗地", "棄甲曳兵", "潰不成軍"], answer: "戰無不勝" });
+            q.push({ id: id++, category: "成語", question: "「嶄露頭角」形容？", options: ["顯示特出的才華", "頭上長角", "隱藏實力", "剛起床的樣子"], answer: "顯示特出的才華" });
+            q.push({ id: id++, category: "成語", question: "「韜光養晦」是哪句成語的反義詞？", options: ["嶄露頭角", "虛懷若谷", "大智若愚", "深藏不露"], answer: "嶄露頭角" });
+            q.push({ id: id++, category: "成語", question: "「絡繹不絕」形容？", options: ["連續不斷", "交通阻塞", "聲音很大", "繩子很長"], answer: "連續不斷" });
+            q.push({ id: id++, category: "成語", question: "「一望無際」形容？", options: ["寬廣遼闊", "視力模糊", "沒有希望", "邊界很近"], answer: "寬廣遼闊" });
+            q.push({ id: id++, category: "成語", question: "「懵懂」的意思接近？", options: ["糊塗", "明白", "聰明", "懂事"], answer: "糊塗" });
+            q.push({ id: id++, category: "成語", question: "「怙惡不悛」是指？", options: ["堅持作惡不悔改", "父親去世", "惡人有惡報", "雖然作惡但會改"], answer: "堅持作惡不悔改" });
+            q.push({ id: id++, category: "成語", question: "「居心叵測」的意思是？", options: ["存心險惡，難以推測", "心地善良", "心思細膩", "居住環境不好"], answer: "存心險惡，難以推測" });
+            q.push({ id: id++, category: "成語", question: "「微乎其微」形容？", options: ["非常微小", "非常重要", "微妙的關係", "危險"], answer: "非常微小" });
+            q.push({ id: id++, category: "成語", question: "「待價而沽」原本是指賣什麼？", options: ["貨物(比喻懷才待用)", "土地", "股票", "古董"], answer: "貨物(比喻懷才待用)" });
+            q.push({ id: id++, category: "成語", question: "「九霄雲外」通常用來形容？", options: ["拋在極遠的地方", "飛機飛很高", "天氣很好", "神仙住的地方"], answer: "拋在極遠的地方" });
+            q.push({ id: id++, category: "成語", question: "「家道中落」的意思是？", options: ["家境衰敗", "搬家", "家中有人跌倒", "蓋房子"], answer: "家境衰敗" });
+            q.push({ id: id++, category: "成語", question: "「央求」的意思是？", options: ["懇求", "要求", "命令", "答應"], answer: "懇求" });
+            q.push({ id: id++, category: "成語", question: "「微乎其微」的反義詞是？", options: ["舉足輕重", "微不足道", "滄海一粟", "九牛一毛"], answer: "舉足輕重" });
+            q.push({ id: id++, category: "成語", question: "「名聞遐邇」的反義詞是？", options: ["默默無聞", "聲名大噪", "家喻戶曉", "遠近馳名"], answer: "默默無聞" });
+            q.push({ id: id++, category: "成語", question: "「聲名大噪」的意思是？", options: ["聲望名氣大為提高", "聲音很大", "吵鬧不休", "名聲掃地"], answer: "聲望名氣大為提高" });
+            q.push({ id: id++, category: "成語", question: "「不屈不撓」的意思接近？", options: ["百折不撓", "卑躬屈膝", "委曲求全", "撓癢癢"], answer: "百折不撓" });
+            q.push({ id: id++, category: "成語", question: "「筋疲力竭」的意思是？", options: ["形容非常疲倦", "力大無窮", "精神抖擻", "筋骨受傷"], answer: "形容非常疲倦" });
 
             // --- 3. 課文理解 (安藤忠雄) (30題 - 深度解析) ---
-            q.push({ id: id++, category: "課文解析", question: "安藤忠雄年輕時為了出國看建築，考取了什麼執照？", options: ["職業拳擊手", "木工", "導遊", "船員"], answer: "職業拳擊手", explanation: "安藤忠雄為了出國看建築，在短時間內練習並考取職業拳擊手執照，以便出國比賽順便看建築。" });
-            q.push({ id: id++, category: "課文解析", question: "安藤忠雄的學習建築方式主要是？", options: ["自學", "大學建築系", "出國留學", "補習班"], answer: "自學", explanation: "安藤忠雄因經濟因素無法念大學，他透過閱讀、旅行和實作「自學」建築。" });
-            q.push({ id: id++, category: "課文解析", question: "安藤忠雄深信哪句日本諺語？", options: ["有一就會有十", "失敗為成功之母", "一期一會", "坐而言不如起而行"], answer: "有一就會有十", explanation: "安藤深信「只要有一，就會有十」，意思是萬事起頭難，只要能創造第一個機會，後續的機會就會接踵而至。" });
-            q.push({ id: id++, category: "課文解析", question: "文中提到安藤忠雄將競圖比喻為？", options: ["拳擊場", "戰場", "賭場", "遊樂場"], answer: "拳擊場", explanation: "安藤將競圖比喻為「磨鍊思考、激發潛力、觀摩交流的拳擊場」，呼應他曾是拳擊手的經歷。" });
-            q.push({ id: id++, category: "課文解析", question: "安藤忠雄認為邁向夢想的道路？", options: ["有很多途徑", "只有一條", "必須有學歷", "全靠運氣"], answer: "有很多途徑", explanation: "課文提到：「他清楚地知道夢想只有一個，但是，邁向夢想的道路卻有很多途徑。」" });
-            q.push({ id: id++, category: "課文解析", question: "安藤忠雄透過旅行親身體驗了建築的？", options: ["水平與垂直", "價格與成本", "歷史與文化", "顏色與裝飾"], answer: "水平與垂直", explanation: "安藤在旅行中親身體驗了建築的「水平」（如大海）與「垂直」，獲得比課本更直接的感受。" });
-            q.push({ id: id++, category: "課文解析", question: "「孤獨一人，也要讓夢想開花」運用了什麼修辭？", options: ["轉化", "誇飾", "借代", "排比"], answer: "轉化", explanation: "將抽象的「夢想」比作可以「開花」的植物，屬於轉化修辭中的形象化。" });
-            q.push({ id: id++, category: "課文解析", question: "「康莊大道」與「看不見的路」使用了什麼修辭技巧？", options: ["映襯", "類疊", "層遞", "互文"], answer: "映襯", explanation: "以眾人走的「康莊大道」（主流升學路）對比自己走的「看不見的路」（自學路），形成映襯。" });
-            q.push({ id: id++, category: "課文解析", question: "安藤忠雄成名後面臨的挑戰主要是？", options: ["學歷遭受質疑", "沒有靈感", "經濟破產", "健康亮紅燈"], answer: "學歷遭受質疑", explanation: "即使成名並受邀至東大任教，日本社會仍拿他高工畢業的學歷做文章。" });
-            q.push({ id: id++, category: "課文解析", question: "安藤忠雄如何面對沒有案子的時期？", options: ["讀書或去空地思考", "去打拳擊", "出國旅遊", "抱怨社會"], answer: "讀書或去空地思考", explanation: "在沒有案子的時候，他堅持讀書，或是到戶外空地設身處地思考，鍛鍊思考能力。" });
-            q.push({ id: id++, category: "課文解析", question: "這篇文章主要採用什麼寫作結構？", options: ["順敘法", "倒敘法", "插敘法", "補敘法"], answer: "順敘法", explanation: "文章依時間順序，從童年、青年、壯遊、創業到成名，屬於順敘法。" });
-            q.push({ id: id++, category: "課文解析", question: "安藤忠雄認為如果有一個想法，必須要？", options: ["一直說，一直說", "藏在心裡", "寫成書", "申請專利"], answer: "一直說，一直說", explanation: "安藤強調機會要自己創造，必須不斷發聲，直到說服別人。" });
-            q.push({ id: id++, category: "課文解析", question: "「全世界的建築鉅作都跳出教科書，成為他的老師」使用了什麼修辭？", options: ["轉化(擬人)", "譬喻", "誇飾", "引用"], answer: "轉化(擬人)", explanation: "將建築鉅作比擬為會教導他的「老師」，屬於轉化中的擬人法。" });
-            q.push({ id: id++, category: "課文解析", question: "安藤忠雄小時候原本想從事什麼工作遭家人反對？", options: ["木工", "拳擊手", "機械工", "畫家"], answer: "木工", explanation: "安藤小時候看著鄰居蓋房子，原本想進木工工廠，但遭外婆與家人反對。" });
-            q.push({ id: id++, category: "課文解析", question: "文末提到安藤忠雄獲獎後的心態是？", options: ["渴望進步與對話", "退休養老", "批評後進", "不再參加比賽"], answer: "渴望進步與對話", explanation: "安藤獲獎後不自滿，依然渴望進步與對話，因此數度參與國際競圖。" });
-            q.push({ id: id++, category: "課文解析", question: "安藤忠雄第一次興起從事建築業的夢想，是因為？", options: ["看著加蓋小屋完成", "看到宏偉的教堂", "讀了建築雜誌", "參觀了博物館"], answer: "看著加蓋小屋完成", explanation: "14歲時，看著年輕木匠為他家蓋了一個7坪大的加蓋小屋，深受感動而興起夢想。" });
-            q.push({ id: id++, category: "課文解析", question: "安藤忠雄因為家人反對做木工，轉而就讀什麼科系？", options: ["高工機械科", "高中普通科", "高職美工科", "五專土木科"], answer: "高工機械科", explanation: "家人反對他做木工，他於是轉念高工機械科，並開始自學建築。" });
-            q.push({ id: id++, category: "課文解析", question: "安藤忠雄只花了多久時間就拿到職業拳擊手執照？", options: ["兩個多月", "兩年", "兩週", "半年"], answer: "兩個多月", explanation: "為了出國，他展現驚人的行動力，只花兩個多月練習就考取執照。" });
-            q.push({ id: id++, category: "課文解析", question: "安藤忠雄為什麼無法進大學念建築？", options: ["經濟因素", "成績太差", "不想念書", "學校不收"], answer: "經濟因素", explanation: "雖然家人不反對，但因家境經濟因素，無法負擔大學學費。" });
-            q.push({ id: id++, category: "課文解析", question: "「康莊大道」在文中比喻什麼？", options: ["主流、學歷至上的路", "寬闊的馬路", "充滿花朵的路", "通往成功的捷徑"], answer: "主流、學歷至上的路", explanation: "康莊大道比喻日本社會主流的、依循學歷體制的成功路徑。" });
-            q.push({ id: id++, category: "課文解析", question: "「我對自己說，我要讓這條路也能開花結果」顯示安藤忠雄的？", options: ["堅強意志與決心", "自大與傲慢", "無奈與妥協", "天真與浪漫"], answer: "堅強意志與決心", explanation: "這句話表達了他不畏艱難，決心在非主流的自學道路上闖出成就的意志。" });
-            q.push({ id: id++, category: "課文解析", question: "文中引用「紙上得來終覺淺，絕知此事要躬行」意近於安藤的哪種經歷？", options: ["行萬里路(旅行體驗)", "自修苦讀", "考拳擊執照", "參加競圖"], answer: "行萬里路(旅行體驗)", explanation: "安藤透過旅行親身觸摸、體驗建築，比書本知識更深刻，印證了「讀萬卷書不如行萬里路」。" });
-            q.push({ id: id++, category: "課文解析", question: "「你沒受過正規的教育，怎麼能成為一個建築家？」這句話運用了什麼修辭？", options: ["設問(激問)", "誇飾", "倒反", "譬喻"], answer: "設問(激問)", explanation: "這是激問（反問），答案在問題反面，強調旁人認為他「不能」成為建築家。" });
-            q.push({ id: id++, category: "課文解析", question: "創業初期，安藤忠雄對於執行小案子的態度是？", options: ["懷著感恩的心", "感到委屈", "隨便應付", "拒絕接案"], answer: "懷著感恩的心", explanation: "即使是小案子，他也懷著感恩的心全力以赴，深信「有一就會有十」。" });
-            q.push({ id: id++, category: "課文解析", question: "安藤忠雄認為「機會」是如何產生的？", options: ["要自己創造，主動發聲", "等待別人給予", "靠運氣", "靠政府補助"], answer: "要自己創造，主動發聲", explanation: "課文提到：「如果沒有發聲，就不會有任何機會」，機會必須自己創造。" });
-            q.push({ id: id++, category: "課文解析", question: "「菁英分子不容易被說服」這句話暗示了什麼？", options: ["必須堅持己見，不斷溝通", "菁英都很固執", "不要跟菁英說話", "放棄溝通"], answer: "必須堅持己見，不斷溝通", explanation: "因為不容易說服，所以必須「一直說，一直說」，展現堅持與溝通的重要。" });
-            q.push({ id: id++, category: "課文解析", question: "儘管學歷遭受質疑，安藤忠雄最終依然贏得了什麼？", options: ["日本社會的敬重", "更多的金錢", "政治地位", "拳擊冠軍"], answer: "日本社會的敬重", explanation: "實力戰勝了偏見，他依然贏得日本社會的敬重。" });
-            q.push({ id: id++, category: "課文解析", question: "安藤忠雄將競圖視為「磨鍊思考」的場所，這呼應了他哪段經歷？", options: ["曾是拳擊手", "曾是木工", "曾是貨車司機", "曾是學生"], answer: "曾是拳擊手", explanation: "將競圖比喻為「拳擊場」，呼應了他年輕時曾擔任職業拳擊手的經歷。" });
-            q.push({ id: id++, category: "課文解析", question: "「寶劍鋒從磨礪出，梅花香自苦寒來」最適合形容安藤忠雄的哪種精神？", options: ["歷經磨鍊終獲成功", "天資聰穎", "運氣很好", "喜歡冒險"], answer: "歷經磨鍊終獲成功", explanation: "安藤經過艱苦的自學與磨鍊，最終獲得成就，與此名句意境相符。" });
-            q.push({ id: id++, category: "課文解析", question: "本課文的主旨是期勉讀者？", options: ["秉持熱情、自強不息", "追求名利", "考取證照", "出國旅遊"], answer: "秉持熱情、自強不息", explanation: "文章核心在於期勉讀者學習安藤忠雄追求夢想的熱情與堅持到底的精神。" });
+            q.push({ id: id++, category: "課文解析", question: "安藤忠雄年輕時為了出國看建築，考取了什麼執照？", options: ["職業拳擊手", "木工", "導遊", "船員"], answer: "職業拳擊手" });
+            q.push({ id: id++, category: "課文解析", question: "安藤忠雄的學習建築方式主要是？", options: ["自學", "大學建築系", "出國留學", "補習班"], answer: "自學" });
+            q.push({ id: id++, category: "課文解析", question: "安藤忠雄深信哪句日本諺語？", options: ["有一就會有十", "失敗為成功之母", "一期一會", "坐而言不如起而行"], answer: "有一就會有十" });
+            q.push({ id: id++, category: "課文解析", question: "文中提到安藤忠雄將競圖比喻為？", options: ["拳擊場", "戰場", "賭場", "遊樂場"], answer: "拳擊場" });
+            q.push({ id: id++, category: "課文解析", question: "安藤忠雄認為邁向夢想的道路？", options: ["有很多途徑", "只有一條", "必須有學歷", "全靠運氣"], answer: "有很多途徑" });
+            q.push({ id: id++, category: "課文解析", question: "安藤忠雄透過旅行親身體驗了建築的？", options: ["水平與垂直", "價格與成本", "歷史與文化", "顏色與裝飾"], answer: "水平與垂直" });
+            q.push({ id: id++, category: "課文解析", question: "「孤獨一人，也要讓夢想開花」運用了什麼修辭？", options: ["轉化", "誇飾", "借代", "排比"], answer: "轉化" });
+            q.push({ id: id++, category: "課文解析", question: "「康莊大道」與「看不見的路」使用了什麼修辭技巧？", options: ["映襯", "類疊", "層遞", "互文"], answer: "映襯" });
+            q.push({ id: id++, category: "課文解析", question: "安藤忠雄成名後面臨的挑戰主要是？", options: ["學歷遭受質疑", "沒有靈感", "經濟破產", "健康亮紅燈"], answer: "學歷遭受質疑" });
+            q.push({ id: id++, category: "課文解析", question: "安藤忠雄如何面對沒有案子的時期？", options: ["讀書或去空地思考", "去打拳擊", "出國旅遊", "抱怨社會"], answer: "讀書或去空地思考" });
+            q.push({ id: id++, category: "課文解析", question: "這篇文章主要採用什麼寫作結構？", options: ["順敘法", "倒敘法", "插敘法", "補敘法"], answer: "順敘法" });
+            q.push({ id: id++, category: "課文解析", question: "安藤忠雄認為如果有一個想法，必須要？", options: ["一直說，一直說", "藏在心裡", "寫成書", "申請專利"], answer: "一直說，一直說" });
+            q.push({ id: id++, category: "課文解析", question: "「全世界的建築鉅作都跳出教科書，成為他的老師」使用了什麼修辭？", options: ["轉化(擬人)", "譬喻", "誇飾", "引用"], answer: "轉化(擬人)" });
+            q.push({ id: id++, category: "課文解析", question: "安藤忠雄小時候原本想從事什麼工作遭家人反對？", options: ["木工", "拳擊手", "機械工", "畫家"], answer: "木工" });
+            q.push({ id: id++, category: "課文解析", question: "文末提到安藤忠雄獲獎後的心態是？", options: ["渴望進步與對話", "退休養老", "批評後進", "不再參加比賽"], answer: "渴望進步與對話" });
+            q.push({ id: id++, category: "課文解析", question: "安藤忠雄第一次興起從事建築業的夢想，是因為？", options: ["看著加蓋小屋完成", "看到宏偉的教堂", "讀了建築雜誌", "參觀了博物館"], answer: "看著加蓋小屋完成" });
+            q.push({ id: id++, category: "課文解析", question: "安藤忠雄因為家人反對做木工，轉而就讀什麼科系？", options: ["高工機械科", "高中普通科", "高職美工科", "五專土木科"], answer: "高工機械科" });
+            q.push({ id: id++, category: "課文解析", question: "安藤忠雄只花了多久時間就拿到職業拳擊手執照？", options: ["兩個多月", "兩年", "兩週", "半年"], answer: "兩個多月" });
+            q.push({ id: id++, category: "課文解析", question: "安藤忠雄為什麼無法進大學念建築？", options: ["經濟因素", "成績太差", "不想念書", "學校不收"], answer: "經濟因素" });
+            q.push({ id: id++, category: "課文解析", question: "「康莊大道」在文中比喻什麼？", options: ["主流、學歷至上的路", "寬闊的馬路", "充滿花朵的路", "通往成功的捷徑"], answer: "主流、學歷至上的路" });
+            q.push({ id: id++, category: "課文解析", question: "「我對自己說，我要讓這條路也能開花結果」顯示安藤忠雄的？", options: ["堅強意志與決心", "自大與傲慢", "無奈與妥協", "天真與浪漫"], answer: "堅強意志與決心" });
+            q.push({ id: id++, category: "課文解析", question: "文中引用「紙上得來終覺淺，絕知此事要躬行」意近於安藤的哪種經歷？", options: ["行萬里路(旅行體驗)", "自修苦讀", "考拳擊執照", "參加競圖"], answer: "行萬里路(旅行體驗)" });
+            q.push({ id: id++, category: "課文解析", question: "「你沒受過正規的教育，怎麼能成為一個建築家？」這句話運用了什麼修辭？", options: ["設問(激問)", "誇飾", "倒反", "譬喻"], answer: "設問(激問)" });
+            q.push({ id: id++, category: "課文解析", question: "創業初期，安藤忠雄對於執行小案子的態度是？", options: ["懷著感恩的心", "感到委屈", "隨便應付", "拒絕接案"], answer: "懷著感恩的心" });
+            q.push({ id: id++, category: "課文解析", question: "安藤忠雄認為「機會」是如何產生的？", options: ["要自己創造，主動發聲", "等待別人給予", "靠運氣", "靠政府補助"], answer: "要自己創造，主動發聲" });
+            q.push({ id: id++, category: "課文解析", question: "「菁英分子不容易被說服」這句話暗示了什麼？", options: ["必須堅持己見，不斷溝通", "菁英都很固執", "不要跟菁英說話", "放棄溝通"], answer: "必須堅持己見，不斷溝通" });
+            q.push({ id: id++, category: "課文解析", question: "儘管學歷遭受質疑，安藤忠雄最終依然贏得了什麼？", options: ["日本社會的敬重", "更多的金錢", "政治地位", "拳擊冠軍"], answer: "日本社會的敬重" });
+            q.push({ id: id++, category: "課文解析", question: "安藤忠雄將競圖視為「磨鍊思考」的場所，這呼應了他哪段經歷？", options: ["曾是拳擊手", "曾是木工", "曾是貨車司機", "曾是學生"], answer: "曾是拳擊手" });
+            q.push({ id: id++, category: "課文解析", question: "「寶劍鋒從磨礪出，梅花香自苦寒來」最適合形容安藤忠雄的哪種精神？", options: ["歷經磨鍊終獲成功", "天資聰穎", "運氣很好", "喜歡冒險"], answer: "歷經磨鍊終獲成功" });
+            q.push({ id: id++, category: "課文解析", question: "本課文的主旨是期勉讀者？", options: ["秉持熱情、自強不息", "追求名利", "考取證照", "出國旅遊"], answer: "秉持熱情、自強不息" });
 
             // 隨機打亂選項 (Fisher-Yates Shuffle)
             const shuffleArray = (array) => {
@@ -891,8 +891,7 @@
                             correctAnswer: q.answer,
                             isCorrect,
                             options: q.options,
-                            category: q.category,
-                            explanation: q.explanation // Save explanation for history/review
+                            category: q.category
                         };
                     });
                     
@@ -909,8 +908,7 @@
                                 id: detail.id,
                                 question: detail.question,
                                 answer: detail.correctAnswer,
-                                category: detail.category,
-                                explanation: detail.explanation
+                                category: detail.category
                             });
                         }
                     }
@@ -992,24 +990,7 @@
                                     return (<button key={i} onClick={() => handleAnswer(opt)} disabled={isAnswered} className={`w-full text-left p-5 rounded-xl border-2 transition relative text-lg font-medium ${statusClass}`}><span className="inline-block w-6 font-bold text-stone-400 mr-2">{String.fromCharCode(65 + i)}.</span>{opt}{isAnswered && opt === currentQ.answer && <CheckCircle className="w-5 h-5 text-emerald-600 absolute right-4 top-1/2 -translate-y-1/2" />}{isAnswered && opt === answers[currentQ.id] && opt !== currentQ.answer && <XCircle className="w-5 h-5 text-red-600 absolute right-4 top-1/2 -translate-y-1/2" />}</button>);
                                 })}</div>
                             </div>
-                            
-                            {/* Updated Immediate Explanation Section for Full Quiz */}
-                            {isAnswered && (
-                                <div className={`rounded-xl p-6 mb-6 animate-fade-in ${answers[currentQ.id] === currentQ.answer ? 'bg-emerald-50 text-emerald-900' : 'bg-red-50 text-red-900'}`}>
-                                    <div className="flex items-center mb-2 font-bold text-lg">
-                                        {answers[currentQ.id] === currentQ.answer ? <><CheckCircle className="w-6 h-6 mr-2" /> 答對了！</> : <><XCircle className="w-6 h-6 mr-2" /> 答錯了！</>}
-                                    </div>
-                                    <div className="mt-2 text-xl mb-3"><span className="font-bold">正確答案：</span> {currentQ.answer}</div>
-                                    
-                                    {/* Explanation Block */}
-                                    <div className="bg-white/60 rounded-lg p-4 text-stone-800 text-lg leading-relaxed border border-black/5">
-                                        <div className="flex items-center font-bold text-stone-700 mb-1">
-                                            <Info className="w-5 h-5 mr-1" /> 詳解：
-                                        </div>
-                                        {currentQ.explanation}
-                                    </div>
-                                </div>
-                            )}
+                            {isAnswered && (<div className={`rounded-xl p-6 mb-6 animate-fade-in ${answers[currentQ.id] === currentQ.answer ? 'bg-emerald-100 text-emerald-900' : 'bg-red-50 text-red-900'}`}><div className="flex items-center mb-2 font-bold text-lg">{answers[currentQ.id] === currentQ.answer ? <><CheckCircle className="w-6 h-6 mr-2" /> 答對了！</> : <><XCircle className="w-6 h-6 mr-2" /> 答錯了！</>}</div><div className="mt-4 text-xl"><span className="font-bold">正確答案：</span> {currentQ.answer}<div className="mt-3 text-stone-700 text-lg leading-relaxed"></div></div></div>)}
                         </div>
                     </div>
                     <div className="bg-white p-4 border-t flex justify-between items-center z-10 sticky bottom-0">
@@ -1084,7 +1065,7 @@
                 setFavorites(intSet);
             };
 
-            const handleAnswer = (qId, option, correctAns, category, questionText, explanation) => {
+            const handleAnswer = (qId, option, correctAns, category, questionText) => {
                 if (answers[qId]) return; // Already answered
 
                 const isCorrect = option === correctAns;
@@ -1100,8 +1081,7 @@
                         id: qId,
                         question: questionText,
                         answer: correctAns,
-                        category: category,
-                        explanation: explanation
+                        category: category
                     });
                 }
             };
@@ -1118,8 +1098,7 @@
                     correctAnswer: q.answer,
                     isCorrect: answers[q.id] === q.answer,
                     options: q.options,
-                    category: q.category,
-                    explanation: q.explanation
+                    category: q.category
                 }));
 
                 if (details.length > 0) {
@@ -1221,7 +1200,7 @@
                                                 return (
                                                     <button 
                                                         key={i} 
-                                                        onClick={() => handleAnswer(q.id, opt, q.answer, q.category, q.question, q.explanation)}
+                                                        onClick={() => handleAnswer(q.id, opt, q.answer, q.category, q.question)}
                                                         disabled={isAnswered}
                                                         className={`text-left px-4 py-3 rounded-lg border-2 transition flex items-center ${btnClass}`}
                                                     >
@@ -1233,19 +1212,10 @@
                                             })}
                                         </div>
                                         
-                                        {/* Updated Feedback Text with Explanation for Quick Quiz */}
-                                        {isAnswered && (
-                                            <div className={`mt-4 p-4 rounded-lg text-sm animate-fade-in ${isCorrect ? 'bg-emerald-100/50 text-emerald-900' : 'bg-red-50 text-red-900'}`}>
-                                                <div className="flex items-center font-bold mb-2">
-                                                    {isCorrect 
-                                                        ? <><CheckCircle className="w-4 h-4 mr-1" /> 答對了！</> 
-                                                        : <><AlertCircle className="w-4 h-4 mr-1" /> 答錯了！正確答案是：{q.answer}</>
-                                                    }
-                                                </div>
-                                                <div className="text-stone-700 leading-relaxed border-t border-black/5 pt-2 mt-2">
-                                                    <span className="font-bold block mb-1">詳解：</span>
-                                                    {q.explanation}
-                                                </div>
+                                        {/* Feedback Text */}
+                                        {isAnswered && !isCorrect && (
+                                            <div className="mt-3 text-sm text-red-600 font-bold flex items-center animate-fade-in">
+                                                <AlertCircle className="w-4 h-4 mr-1" /> 答錯了！正確答案是：{q.answer} (已加入錯題本)
                                             </div>
                                         )}
                                     </div>
@@ -1311,13 +1281,6 @@
                                             </div>
                                         )}
                                     </div>
-                                    {/* Explanation in Review */}
-                                    {item.explanation && (
-                                        <div className="mt-4 bg-stone-50 p-3 rounded text-stone-700 text-sm leading-relaxed border border-stone-200">
-                                            <span className="font-bold text-stone-900 block mb-1">解析：</span>
-                                            {item.explanation}
-                                        </div>
-                                    )}
                                 </div>
                             ))}
                         </div>
@@ -1456,12 +1419,6 @@
                                                                 </div>
                                                             )}
                                                         </div>
-                                                        {/* History Explanation */}
-                                                        {d.explanation && (
-                                                            <div className="mt-2 pt-2 border-t border-stone-100 text-stone-600 leading-relaxed">
-                                                                <span className="font-bold text-stone-800">解析：</span>{d.explanation}
-                                                            </div>
-                                                        )}
                                                     </div>
                                                 </div>
                                             ))}
@@ -1482,17 +1439,9 @@
                                         )}
                                     </div>
                                     <h3 className="font-bold text-lg text-stone-800 mb-3">{item.question}</h3>
-                                    <div className="bg-emerald-50 p-3 rounded text-sm text-emerald-800 mb-3">
+                                    <div className="bg-emerald-50 p-3 rounded text-sm text-emerald-800">
                                         <span className="font-bold">正確答案：</span> {item.answer || (ALL_QUESTIONS.find(q=>q.id === item.id)?.answer)}
                                     </div>
-                                    
-                                    {/* Explanation in Mistakes */}
-                                    {(item.explanation || ALL_QUESTIONS.find(q=>q.id === item.id)?.explanation) && (
-                                        <div className="bg-stone-50 p-3 rounded text-sm text-stone-600 leading-relaxed border border-stone-200">
-                                            <span className="font-bold text-stone-800 block mb-1">解析：</span>
-                                            {item.explanation || ALL_QUESTIONS.find(q=>q.id === item.id)?.explanation}
-                                        </div>
-                                    )}
                                     
                                     {/* Controls for removal */}
                                     <div className="mt-4 flex justify-end">
